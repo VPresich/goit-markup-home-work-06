@@ -1154,7 +1154,7 @@ img {
 }
 
 /* POINT - 1 */
-@media (min-width: 320px) {
+@media (min-width: 321px) {
   .container {
     max-width: 768px;
     width: 100%;
