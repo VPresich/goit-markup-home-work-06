@@ -302,8 +302,8 @@ img {
 }
 
 .feature-card {
-  min-width: var(--width-container-mobile);
-  width: 288px;
+  min-width: 288px;
+  width: 100%;
 }
 
 .features {
@@ -482,7 +482,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 24px;
   row-gap: 48px;
 }
@@ -530,7 +530,7 @@ img {
 
 /* For overlay */
 .portfolio-overlay-card {
-  min-width: 288px;
+  /* min-width: 288px; */
   position: relative;
   display: block;
   width: 100%;
@@ -1036,7 +1036,7 @@ img {
   color: inherit;
   background-color: var(--white);
   width: 320px;
-  height: 640px;
+  height: 100vh;
   flex-shrink: 0;
   border-radius: 4px;
   transition: inherit;
@@ -1170,8 +1170,6 @@ img {
   }
 
   .feature-card {
-    max-width: 356px;
-    min-width: 288px;
     width: calc((100% - 24px) / 2);
   }
 
@@ -1194,7 +1192,6 @@ img {
 
   .portfolio-card {
     max-width: 356px;
-    min-width: 288px;
     width: calc((100% - 24px) / 2);
   }
 
@@ -1267,18 +1264,15 @@ img {
   }
 
   .feature-card {
-    min-width: 264px;
     width: calc((100% - 24px * 3) / 4);
   }
 
   .team-card {
-    max-width: 264px;
     width: calc((100% - 24px * 3) / 4);
   }
 
   .portfolio-card {
     max-width: 360px;
-    min-width: 356px;
     width: calc((100% - 24px * 2) / 3);
   }
 
@@ -1335,9 +1329,6 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navyblue);
-    margin-bottom: 8px;
     text-transform: none;
   }
 
