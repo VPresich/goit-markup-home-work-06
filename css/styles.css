@@ -73,9 +73,8 @@ img {
 }
 
 .container {
-  min-width: 320px;
+  min-width: 288px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* Header */
@@ -1164,7 +1163,7 @@ img {
   .container {
     max-width: 736px;
     margin: auto;
-    padding: 0 16px;
+    padding: 0 15px;
   }
 
   .section-about {
