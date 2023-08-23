@@ -73,7 +73,7 @@ img {
 }
 
 .container {
-  min-width: var(--width-page-mobile); /* 320px;*/
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -713,7 +713,7 @@ img {
 }
 
 .subscribe-button:hover .button-icon {
-  fill: var(--ocean);
+  fill: var(--cloud);
 }
 
 .button-text {
@@ -768,8 +768,8 @@ img {
   font-family: inherit;
   color: inherit;
   background-color: var(--dairy);
-  min-width: 288px;
-  height: 623px;
+  /* width: 408px;
+  height: 584px; */
   min-width: var(--width-container-mobile);
   height: 623px;
   flex-shrink: 0;
@@ -1029,7 +1029,7 @@ img {
   font-family: inherit;
   color: inherit;
   background-color: var(--white);
-  width: var(--width-page-mobile); /* 320px;*/
+  width: 320px;
   height: 640px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -1152,7 +1152,7 @@ img {
 }
 
 /* POINT - 1 */
-@media (min-width: var(--width-page-mobile)) /* 320 */ {
+@media (min-width: 320px) {
   .container {
     max-width: 736px;
     margin: auto;
