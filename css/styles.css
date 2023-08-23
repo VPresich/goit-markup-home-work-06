@@ -17,7 +17,7 @@
   --width-photo-portfolio-mobile: 288px;
 
   /* Paddings */
-  --padding-setion-mobile: 96px;
+  --padding-section-mobile: 96px;
   --gap-mobile: 72px;
 
   --width-page-tablet: 768px; /* point 2 */
@@ -25,7 +25,7 @@
 
   --width-page-desktop: 1440px; /* point 3 */
   --width-container-desktop: 1158px;
-  --padding-setion-desktop: 120px;
+  --padding-section-desktop: 120px;
 }
 
 body {
@@ -237,7 +237,7 @@ img {
 /* Main */
 /* Section 1 - About firm */
 .section-about {
-  max-width: var(--width-page-mobile); /*1440px;*/
+  max-width: 320px; /*1440px;*/
   background-color: var(--navyblue);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -247,8 +247,6 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: auto;
   margin: auto;
   padding: 112px 0px;
 }
@@ -300,7 +298,12 @@ img {
 
 /* Section 2 - Features */
 .section-features {
-  padding: var(--padding-setion-mobile) 0;
+  padding: var(--padding-section-mobile) 0;
+}
+
+.feature-card {
+  min-width: var(--width-container-mobile);
+  width: 288px;
 }
 
 .features {
@@ -310,11 +313,6 @@ img {
   justify-content: center;
   gap: 24px;
   row-gap: var(--gap-mobile);
-}
-
-.feature-card {
-  min-width: var(--width-container-mobile);
-  width: 100%;
 }
 
 .feature-icon-container {
@@ -359,7 +357,7 @@ img {
 .section-team {
   background-color: var(--cloud);
   margin: 0px;
-  padding: var(--padding-setion-mobile) 0px;
+  padding: var(--padding-section-mobile) 0px;
 }
 
 .section-team-header {
@@ -460,7 +458,7 @@ img {
 .section-portfolio {
   background-color: var(--white);
   margin: 0px;
-  padding: var(--padding-setion-mobile) 0px;
+  padding: var(--padding-section-mobile) 0px;
 }
 
 .section-portfolio-header {
@@ -561,7 +559,7 @@ img {
 .footer-page {
   background: var(--navyblue);
   margin: 0px;
-  padding: var(--padding-setion-mobile) 0px;
+  padding: var(--padding-section-mobile) 0px;
 }
 
 .footer-page .container {
@@ -1156,8 +1154,9 @@ img {
 /* POINT - 1 */
 @media (min-width: 320px) {
   .container {
-    max-width: 768px;
-    width: 100%;
+    max-width: 736px;
+    margin: auto;
+    padding: 0;
   }
 
   .section-about {
@@ -1165,7 +1164,8 @@ img {
   }
 
   .feature-card {
-    min-width: 356px;
+    max-width: 356px;
+    min-width: 288px;
     width: calc((100% - 24px) / 2);
   }
 
@@ -1187,7 +1187,8 @@ img {
   }
 
   .portfolio-card {
-    min-width: 356px;
+    max-width: 356px;
+    min-width: 288px;
     width: calc((100% - 24px) / 2);
   }
 
@@ -1270,12 +1271,17 @@ img {
   }
 
   .portfolio-card {
-    min-width: 360px;
-    width: (calc(100% - 24px * 2) / 3);
+    max-width: 360px;
+    min-width: 356px;
+    width: calc((100% - 24px * 2) / 3);
   }
 
   .footer-page .container {
     padding-left: 120px;
+  }
+
+  .form-order-service {
+    height: 584px;
   }
 }
 
@@ -1308,7 +1314,7 @@ img {
   .section-team,
   .section-features,
   .section-portfolio {
-    padding: var(--padding-setion-desktop) 0px;
+    padding: var(--padding-section-desktop) 0px;
   }
 
   .features {
@@ -1343,5 +1349,11 @@ img {
 
   .footer-page .container {
     padding-left: 16px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .section-about {
+    background-image: url('../images/people-office@2x.jpg');
   }
 }
