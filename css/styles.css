@@ -777,10 +777,9 @@ img {
   font-family: inherit;
   color: inherit;
   background-color: var(--dairy);
-  /* width: 408px;
-  height: 584px; */
+  width: 408px;
+  min-height: 584px;
   min-width: var(--width-container-mobile);
-  height: 623px;
   flex-shrink: 0;
   border-radius: 4px;
   transition: inherit;
@@ -1165,7 +1164,7 @@ img {
   .container {
     max-width: 736px;
     margin: auto;
-    padding: 0;
+    padding: 0 16px;
   }
 
   .section-about {
@@ -1234,6 +1233,7 @@ img {
 @media (max-width: 427px) {
   .form-order-service {
     width: calc(100% - 30px);
+    height: 100vh;
   }
 }
 
@@ -1282,10 +1282,6 @@ img {
 
   .footer-page .container {
     padding-left: 120px;
-  }
-
-  .form-order-service {
-    height: 584px;
   }
 }
 
