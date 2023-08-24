@@ -1274,7 +1274,7 @@ img {
 
   .subscribe,
   .footer-social-media,
-  /* .footer-section-copyright, */
+  .footer-section-copyright,
   .footer-page .container {
     align-items: flex-start;
     justify-content: flex-start;
