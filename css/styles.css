@@ -630,6 +630,7 @@ img {
 }
 
 .footer-social-media-title {
+  width: 100%;
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
