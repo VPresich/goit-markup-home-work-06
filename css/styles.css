@@ -13,7 +13,7 @@
 
   /* Width */
   --width-page-mobile: 320px; /* point 1 */
-  --width-container-mobile: 288px;
+  --width-container-mobile: 320px;
   --width-photo-portfolio-mobile: 288px;
 
   /* Paddings */
@@ -73,8 +73,9 @@ img {
 }
 
 .container {
-  max-width: 288px;
+  max-width: 320px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 /* Header */
@@ -629,7 +630,7 @@ img {
   row-gap: 16px;
 }
 
-.footer-social-media-title {  
+.footer-social-media-title {
   color: var(--white);
   font-size: 16px;
   font-weight: 500;
@@ -1181,12 +1182,16 @@ img {
 /* POINT - 1 */
 @media (min-width: 320px) {
   .container {
-    max-width: 736px;
-    margin: auto;
+    max-width: 768px;
+    /* margin: auto; */
   }
 
   .section-about {
     max-width: 768px;
+  }
+
+  .feature-card {
+    width: calc((100% - 24px) / 2);
   }
 
   .team {
@@ -1223,7 +1228,7 @@ img {
     gap: 24px;
   }
   .container {
-    max-width: 1126px;
+    max-width: 1158px;
   }
   .menu-icon-button-container {
     display: none;
@@ -1247,12 +1252,6 @@ img {
     line-height: 1.07;
     text-transform: none;
     max-width: 496px;
-  }
-
-  .feature-card {
-    min-width: 356px;
-    max-width: 550px;
-    width: calc((100% - 24px) / 2);
   }
 
   .feature-title {
@@ -1360,7 +1359,7 @@ img {
   }
 
   .footer-page .container {
-    padding-left: 0;
+    padding-left: 16px;
   }
 }
 
