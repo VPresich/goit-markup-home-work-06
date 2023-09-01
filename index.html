@@ -646,13 +646,12 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="modal-window is-hidden" id="id-modal-window">
+    <div class="modal-backdrop" id="id-modal-backdrop">
       <!-- Form order service -->
       <form class="form-order-service" id="id-order-service">
         <div class="form-container">
           <!-- Form header -->
           <div class="form-header">
-            <div class="form-title"></div>
             <!-- Close button -->
             <button class="close-button" id="id-close-button">
               <svg class="close-icon" width="8" height="8">
@@ -666,6 +665,7 @@
             <label class="form-text"
               >Leave your contacts and we will call you back</label
             >
+            <!-- Input fields -->
             <label class="input-label" for="user-name">Name</label>
             <div class="input-custom">
               <span class="input-icon-container">
@@ -736,11 +736,10 @@
                     <use href="./images/icons.svg#click-checkbox"></use>
                   </svg>
                 </span>
-
-                <span
-                  >I accept the terms and conditions of the
-                  <a class="input-link" href=""> Privacy Policy</a></span
-                >
+                <span>
+                  I accept the terms and conditions of the
+                  <a class="input-link" href=""> Privacy Policy</a>
+                </span>
               </label>
             </div>
             <!-- Button -->
@@ -851,21 +850,21 @@
     </div>
 
     <script>
-      var buttonOrder = document.querySelector('.button-order');
-      var modalWindow = document.querySelector('.modal-window');
-      var buttonClose = document.querySelector('.close-button');
+      const buttonOrder = document.querySelector('.button-order');
+      const modalBackdrop = document.querySelector('.modal-backdrop');
+      const buttonClose = document.querySelector('.close-button');
 
       buttonOrder.addEventListener('click', function () {
-        modalWindow.classList.remove('is-hidden');
+        modalBackdrop.classList.add('is-open');
       });
 
       buttonClose.addEventListener('click', function () {
-        modalWindow.classList.add('is-hidden');
+        modalBackdrop.classList.remove('is-open');
       });
 
-      var buttonMenu = document.querySelector('.menu-icon-button');
-      var modalMenulWindow = document.querySelector('.modal-menu');
-      var buttonMenuClose = document.querySelector('.form-menu-close-button');
+      const buttonMenu = document.querySelector('.menu-icon-button');
+      const modalMenulWindow = document.querySelector('.modal-menu');
+      const buttonMenuClose = document.querySelector('.form-menu-close-button');
 
       buttonMenu.addEventListener('click', function () {
         modalMenulWindow.classList.remove('is-hidden');
