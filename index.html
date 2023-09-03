@@ -646,7 +646,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="modal-backdrop" id="id-modal-backdrop">
+    <div class="modal-backdrop is-hidden" id="id-modal-backdrop">
       <!-- Form order service -->
       <form class="form-order-service" id="id-order-service">
         <div class="form-container">
@@ -855,11 +855,11 @@
       const buttonClose = document.querySelector('.close-button');
 
       buttonOrder.addEventListener('click', function () {
-        modalBackdrop.classList.add('is-open');
+        modalBackdrop.classList.remove('is-hidden');
       });
 
       buttonClose.addEventListener('click', function () {
-        modalBackdrop.classList.remove('is-open');
+        modalBackdrop.classList.add('is-hidden');
       });
 
       const buttonMenu = document.querySelector('.menu-icon-button');
