@@ -823,7 +823,7 @@ img {
   transition: inherit;
 }
 
-.form-text {
+.form-title {
   font-family: inherit;
   color: var(--navyblue);
   text-align: center;
@@ -926,11 +926,6 @@ img {
 .checkbox-container {
   margin-bottom: 24px;
 }
-
-/* .checkbox-real {
-  opacity: 0;
-  width: 0;
-} */
 
 .checkbox-label {
   color: var(--lightslate);
